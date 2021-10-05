@@ -1,0 +1,150 @@
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+    border-color: cadetblue;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    flex-direction: row;     /* make main axis horizontal (default setting) */
+    justify-content: center; /* center items horizontally, in this case */
+    align-items: center;     /* center items vertically, in this case */
+}
+
+.img-container {
+    display: flex;
+    justify-content: flex-end; /* center items horizontally, in this case */
+    align-items: center;     /* center items vertically, in this case */
+}
+
+
+
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    background-image: url("./../img/header_bg.jpg");
+    border-color: cadetblue;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    flex-direction: row;     /* make main axis horizontal (default setting) */
+    justify-content: center; /* center items horizontally, in this case */
+    align-items: center;     /* center items vertically, in this case */
+}
+h1 {
+    text-align:center;
+}
+@font-face {
+    font-family: myFirstFont;
+    src: url("../font/Raleway-VariableFont_wght.ttf");
+}
+
+body {
+    font-family: myFirstFont, serif;
+}
+
+.flex-container > div {
+    width: 40%;
+    margin: 10px 0px 10px 8px;
+    line-height: 75px;
+}
+
+
+.myButton {
+    box-shadow:inset 0px 39px 0px -24px #e67a73;
+    background-color:#e4685d;
+    border-radius:4px;
+    border:1px solid #ffffff;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:20px;
+    padding:6px 15px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #b23e35;
+    margin: 8px 8px 8px 0px;
+    line-height: 30px;
+}
+.myButton:hover {
+    background-color:#eb675e;
+}
+.myButton:active {
+    position:relative;
+    top:1px;
+}
+
+.main-input-search {
+    display: flex;
+    justify-content: flex-end; /* center items horizontally, in this case */
+    align-items: center;     /* center items vertically, in this case */
+}
+
+.main-input-search > input[type=text] {
+    width: 60%;
+    padding: 10px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+.add-new-company-btn {
+    background: #34d963;
+    background-image: -webkit-linear-gradient(top, #34d963, #2bb849);
+    background-image: -moz-linear-gradient(top, #34d963, #2bb849);
+    background-image: -ms-linear-gradient(top, #34d963, #2bb849);
+    background-image: -o-linear-gradient(top, #34d963, #2bb849);
+    background-image: linear-gradient(to bottom, #34d963, #2bb849);
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    border-radius: 9px;
+    -webkit-box-shadow: 0px 1px 3px #666666;
+    -moz-box-shadow: 0px 1px 3px #666666;
+    box-shadow: 0px 1px 3px #666666;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+.add-new-company-btn:hover {
+    background: #fc3c3c;
+    text-decoration: none;
+}
+
+.data-container {
+    display: flex;
+    flex-wrap: nowrap;
+    border-color: cadetblue;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    flex-direction: row;     /* make main axis horizontal (default setting) */
+    justify-content: center; /* center items horizontally, in this case */
+    align-items: center;     /* center items vertically, in this case */
+}
+.no-data-container {
+    background-image: url("./../img/no_data.jpg");
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
+    width: 60%;
+    height: 700px;
+    display: flex;
+    justify-content: center; /* center items horizontally, in this case */
+    align-items: center;     /* center items vertically, in this case */
+}
+
+.list-data-container {
+    background-image: url("./../img/list_bg.jpg");
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center; /* center items horizontally, in this case */
+    align-items: center;     /* center items vertically, in this case */
+}

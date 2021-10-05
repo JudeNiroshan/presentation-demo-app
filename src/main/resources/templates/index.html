@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" type="text/css" href="../static/css/index.css"/>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" media="all"
+          th:href="@{css/index.css}"/>
+    <title>Check all the companies!</title>
+</head>
+<body>
+<div class="container">
+    <div class="img-container">
+        <img th:src="@{img/header_pic.jpg}" width="150" height="150"/>
+    </div>
+    <div class="text-container">
+        <h1>Company Catalog</h1>
+    </div>
+</div>
+<form method="post" action="#">
+    <div class="flex-container">
+        <div class="main-input-search">
+            <input name="company-name" type="text"/>
+        </div>
+        <div>
+            <button type="submit" class="myButton">Search</button>
+        </div>
+    </div>
+</form>
+
+<div class="data-container">
+    <div class="list-data-container" th:if="${not #lists.isEmpty(companyList)}">
+        <p>TBD</p>
+    </div>
+    <div class="no-data-container" th:if="${#lists.isEmpty(companyList)}">
+            <p>No registered companies found!</p>
+            <br>
+            <a href="/register" class="add-new-company-btn">Register New Company</a>
+<!--            <img th:src="@{img/no_data.jpg}" width="100%"/>-->
+    </div>
+</div>
+</body>
+</html>
