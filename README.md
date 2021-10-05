@@ -15,4 +15,4 @@ TBD
 
 ## Contributions 🤝
 
-Contributions are most welcome! Please make sure any changes you do, the intention of this application to work as expected where there is **no internet access**(unless you explictly integrate external services)
+Contributions are most welcome! Please make sure any changes you do, the intention of this application to work as expected where there is ❌ **no internet access**(unless you explictly integrate external services)
