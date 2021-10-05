@@ -1,4 +1,4 @@
-package org.jude.demo.companycatalog.home;
+package org.jude.demo.companycatalog.controller;
 
 import org.jude.demo.companycatalog.utils.FileUploadUtil;
 import org.springframework.stereotype.Controller;

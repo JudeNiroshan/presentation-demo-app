@@ -1,4 +1,4 @@
-package org.jude.demo.companycatalog.utils;
+package org.jude.demo.companycatalog.service;
 
 import org.jude.demo.companycatalog.model.Company;
 import org.jude.demo.companycatalog.service.CompanyService;
@@ -9,16 +9,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Component
-public class InitData {
+public class DummyDataGenerateService {
 
     private final CompanyService companyService;
 
-    public InitData(CompanyService companyService) {
+    public DummyDataGenerateService(CompanyService companyService) {
         this.companyService = companyService;
     }
 
-    @PostConstruct
-    private void loadDataFromExternalSystems(){
+    public void loadDataFromExternalSystems(){
         List<Company> companies = dummyCompanyList();
         List<Company> saved = companyService.save(companies);
         System.out.println("New additions===" + saved.size());
