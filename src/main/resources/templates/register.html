@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="https://www.thymeleaf.org">
 <head>
+    <link rel="apple-touch-icon" sizes="180x180" th:href="@{img/favicon/apple-touch-icon.png}">
+    <link rel="icon" type="image/png" sizes="32x32" th:href="@{img/favicon/favicon-32x32.png}">
+    <link rel="icon" type="image/png" sizes="16x16" th:href="@{img/favicon/favicon-16x16.png}">
+    <link rel="manifest" th:href="@{img/favicon/site.webmanifest}">
+    <link rel="mask-icon" th:href="@{img/favicon/safari-pinned-tab.svg}" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" media="all"
-          th:href="@{css/index.css}"/>
+    <link rel="stylesheet" type="text/css" media="all" th:href="@{css/index.css}"/>
+    <link rel="stylesheet" type="text/css" media="all" th:href="@{css/register.css}"/>
     <title>Check all the companies!</title>
 </head>
 <body>
@@ -15,6 +23,65 @@
         <h1>Company Catalog</h1>
     </div>
 </div>
+
+<div class="main-form-container">
+    <div class="form-container">
+        <form action="/register" enctype="multipart/form-data" method="post">
+            <div class="row">
+                <div class="col-25">
+                    <label for="companyName">Company Name : </label>
+                </div>
+                <div class="col-75">
+                    <input type="text" th:required="true" id="companyName" name="companyName" placeholder="Your company name..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="domain">Business Domain : </label>
+                </div>
+                <div class="col-75">
+                    <select id="domain" name="domain">
+                        <option value="aviation">Aviation</option>
+                        <option value="ecommerce">E-Commerce</option>
+                        <option value="financial">Financial</option>
+                        <option value="healthcare">Healthcare</option>
+                        <option value="software">Software Services</option>
+                        <option value="travel">Travel and Tourism</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="year">Founded Year : </label>
+                </div>
+                <div class="col-75">
+                    <input type="number" id="year" name="year" placeholder="Founded In ...">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="location">City : </label>
+                </div>
+                <div class="col-75">
+                    <input type="text" th:required="true" id="location" name="location" placeholder="Headquarters location ...">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="logo">Logo : </label>
+                </div>
+                <div class="col-75">
+                    <input type="file" class="custom-file-input" id="logo" name="file">
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+</div>
+
 
 </body>
 </html>
