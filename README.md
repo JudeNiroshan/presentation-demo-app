@@ -1,13 +1,13 @@
 # presentation-demo-app
 Spring-boot 2 🚀 + Thymeleaf ☘️ containerised application for demo purposes
 
-## Mortivation 💡
+## Motivation 💡
 
-I was looking for a simple monolothic application with CRUD ability, file upload with a nice user interface. Unfortunately there was no simple modular application as such I could find on github. So I decided to develop this application which has least dependencies. 
+I was looking for a simple monolithic application with CRUD ability, file upload with a nice user interface. Unfortunately there was no simple modular application as such I could find on github. So I decided to develop this application which has least dependencies. 
 
 ## Demo 📺
 
-TBD
+![Demo](./doc/demo.gif)
 
 ## How to run 🏃
 
