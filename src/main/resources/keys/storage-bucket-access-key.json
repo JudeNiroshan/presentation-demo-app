@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "mindful-future-324814",
+  "private_key_id": "c0562fa14bd015baf8ea122a5bf65d8929699ba5",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCtG0zq3nvTHgFo\npy3+a5dvo0aHCcZc1VnMNTh7tCP8lQsIVx5YUNcrYAEugXXV+hrRxpmEu0M5BLY4\nF24ZNFyO24+Fu7MaGYivf0XIgGobBsim90mRdXD1zXyMODrJOV49/zGWBVB9F+yv\nYDIBEqba25GyVnhYzfs5/JRPEeE4CE4OohPAbeVAhgW96C0ij+KACTIlF4pS8hir\nCk+pZid/+EgoGzRB8fusLXN1fvcJvVde2qhthIT9rWP9CQsgvlkJACF72oUIA4hT\nLnwSzKPKqnPlcxqAeQgknjpVV7PGm6yKdR3EnqZOi7FCJjiQEHEytT1F9cTq19ho\nSeRfrW0bAgMBAAECggEAJ1ziYDQINykHC/ucB1MC5AVeN72+yARRv5BIkESVvE1N\n7W8V/OIhE4Fos2EH4QjWyWXeKeMFNbV/FAEr7XpNI8UEfVYBs4kj3jhUL3QX7J5d\nyS3JIlTww0wfKqlsoK41YmahqWn68/8ZOIXoyPqrS3ALUOC9y//GxVhMhzBbJMjJ\n4Op4bUqny947qom562jUuGMcSOkJnG/osKnuelRgoYAN3hCk22FHVTfSN7tu8+ek\nzyWqed741cBvVg8ie7Iv4c22duMgpC/gil/qkb4XqZ9YX/XFTtrQU92wB3/w563V\n2vJOQFSfWW8ZISAcJqtmsmhuJGPaouPXIuqOa9wHxQKBgQD0HGXUkjZ5JdFC5NW9\nsuaLxqIO40PD/xhnobX4+03kr6b3OTwLyccafE3D0Jn6PliGd0v72IMfONCScHnG\nuvjfvm8H7P+/OsDu3+vTHOz5T7+YHRp+GvNb165wHMgg7Kg46ze0SS/XwRyAWiwM\ncUchXFsXMPojH3DDYXg5U99GNwKBgQC1iZ0D15OBU+acrn9UVcT5+YYdqkzfeh+S\nH2+Uu3ZFIoncYntNQ9TWnSJFOTWlJ0mgrhILFFLRux4p1B3P7D2KVRQLrRzU2Dg4\nRKOfwAi3Fdk+AMZBbTUWHa3ItL5TenylUGfhzi7ZTh2txYWhPL6WF2MZCcHIlmzT\n7Mpg9RrePQKBgQCRXAujHgHD+Cn47Gz+jfZMy1YbCWeD4XY114yVm4eRoqsI0hMY\nbenasqRX8vKNmex6/bTIXfAOenVwjftlxFaIXUyeapkL1T+nvr0dtD7EYqGTQdlR\nuFirmu4romfleybc5ewAtggAMOT45TkPm7Cgg+9WCvsYSROLtJGziWcN1wKBgQCh\nVf/ZXkmVcn9NWDeJOACrOHtc+fD/24UbVBzSThg6MQvcdRmn/VS2t0exxbpLYLMq\nvgkDF7jS9D1GZ2FnXEkFG7+I8PzinJa6SyYv33bfX+eGFyIbG3dGhHHiId/USNNm\nCCOKprc0IRx3R0gPl/C5a2eC5Qz3u9hUL+lcafjK8QKBgE0jpfcwuuVzGMcGsM2f\nBZUgrNk1eFt48ulJdYm6zd1ZMbkXv/FUToaeE3V829LPo9PRjShbbRAApwsPXgvw\nSJQGs7tOxGPzHcTIVV59xzs2onWp03tfdKB6aGl1f2kpD472FhNVrFFtUa20IJaB\nfhlHLN9s3KRbLBljRCd5wGQX\n-----END PRIVATE KEY-----\n",
+  "client_email": "storage-bucket-access@mindful-future-324814.iam.gserviceaccount.com",
+  "client_id": "110452025371350033172",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/storage-bucket-access%40mindful-future-324814.iam.gserviceaccount.com"
+}

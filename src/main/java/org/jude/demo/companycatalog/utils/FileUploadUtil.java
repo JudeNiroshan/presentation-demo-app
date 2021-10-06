@@ -1,7 +1,14 @@
 package org.jude.demo.companycatalog.utils;
 
+import com.google.auth.Credentials;
+import com.google.auth.oauth2.GoogleCredentials;
+import com.google.cloud.storage.BlobId;
+import com.google.cloud.storage.BlobInfo;
+import com.google.cloud.storage.Storage;
+import com.google.cloud.storage.StorageOptions;
 import org.springframework.web.multipart.MultipartFile;
 
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.file.Files;
@@ -10,6 +17,9 @@ import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
 
 public class FileUploadUtil {
+
+    private static String bucketName = System.getenv("GCP_BUCKET_NAME");
+    private static String projectName = "mindful-future-324814";
 
     public static void saveFile(String uploadDir, String fileName,
                                 MultipartFile multipartFile) throws IOException {
@@ -25,5 +35,22 @@ public class FileUploadUtil {
         } catch (IOException ioe) {
             throw new IOException("Could not save image file: " + fileName, ioe);
         }
+    }
+
+    public static String saveFileInGCPCloudStorage(String fileName, MultipartFile file) throws IOException {
+
+        Credentials credentials = GoogleCredentials.fromStream(
+                new FileInputStream(
+                        FileUploadUtil.class.getResource("/keys/storage-bucket-access-key.json").getFile()));
+
+        Storage storage = StorageOptions.newBuilder()
+                .setCredentials(credentials).setProjectId(projectName).build().getService();
+
+        // Upload a blob to the bucket
+        BlobId blobId = BlobId.of(bucketName, fileName);
+        BlobInfo blobInfo = BlobInfo.newBuilder(blobId).build();
+        storage.create(blobInfo, file.getBytes());
+
+        return "https://storage.googleapis.com/" + bucketName + "/" + blobInfo.getName();
     }
 }
