@@ -15,7 +15,7 @@
     <title>Check all the companies!</title>
 </head>
 <body>
-<div class="container">
+<div class="container" onclick="location.href='/';" style="cursor: pointer;">
     <div class="img-container">
         <img th:src="@{img/header_pic.jpg}" width="150" height="150"/>
     </div>
@@ -71,7 +71,7 @@
                     <label for="logo">Logo : </label>
                 </div>
                 <div class="col-75">
-                    <input type="file" class="custom-file-input" id="logo" name="file">
+                    <input type="file" th:required="true" class="custom-file-input" id="logo" name="file">
                 </div>
             </div>
             <br>

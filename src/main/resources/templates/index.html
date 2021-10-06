@@ -15,7 +15,7 @@
     <title>Check all the companies!</title>
 </head>
 <body>
-<div class="container">
+<div class="container"  onclick="location.href='/';" style="cursor: pointer;">
     <div class="img-container">
         <img th:src="@{img/header_pic.jpg}" width="150" height="150"/>
     </div>
@@ -23,16 +23,29 @@
         <h1>Company Catalog</h1>
     </div>
 </div>
-<form method="post" action="#">
-    <div class="flex-container">
-        <div class="main-input-search">
-            <input name="company-name" type="text"/>
+
+<div class="nav-bar-container">
+    <div class="nav-bar-item-container">
+        <div class="nav-bar-btn-container">
+            <a href="/register" class="add-new-company-btn">Register New Company</a>
+            <a href="/generate-data" class="dummy-data-btn">Generate Dummy Data</a>
         </div>
-        <div>
-            <button type="submit" class="myButton">Search</button>
+        <div class="nav-bar-search-container">
+            <form method="post" action="#" class="form-item">
+                <div class="flex-container">
+                    <div class="main-input-search" style="width: 60%;">
+                        <input name="company-name" type="text"/>
+                    </div>
+                    <div style="width: 40%;">
+                        <button type="submit" class="myButton">Search</button>
+                    </div>
+                </div>
+            </form>
         </div>
     </div>
-</form>
+
+</div>
+
 
 <div class="data-container">
 
@@ -66,7 +79,6 @@
         <p>No registered companies found!</p>
         <br>
         <a href="/register" class="add-new-company-btn">Register New Company</a>
-        <!--            <img th:src="@{img/no_data.jpg}" width="100%"/>-->
     </div>
 </div>
 </body>
