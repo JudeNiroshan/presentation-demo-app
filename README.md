@@ -23,6 +23,8 @@ or
 docker run -it -p 8080:8080 quay.io/jnirosha/presentation-demo-app
 ```
 
+visit ➙ localhost:8080
+
 ### As a developer
 
 You know it, don't you? 
@@ -32,6 +34,8 @@ In case you were vacation for 6months, here are the steps:
 - Make sure you've installed Java 11 and apache maven 3.8+
 - `git clone https://github.com/JudeNiroshan/presentation-demo-app.git`
 -  `mvn spring-boot:run`
+
+visit ➙ localhost:8080
 
 ## Contributions 🤝
 
