@@ -23,7 +23,7 @@ or
 docker run -it -p 8080:8080 quay.io/jnirosha/presentation-demo-app
 ```
 
-visit ➙ localhost:8080
+visit ➙ [http://localhost:8080](http://localhost:8080)
 
 ### As a developer
 
@@ -35,7 +35,7 @@ In case you were vacation for 6months, here are the steps:
 - `git clone https://github.com/JudeNiroshan/presentation-demo-app.git`
 -  `mvn spring-boot:run`
 
-visit ➙ localhost:8080
+visit ➙ [http://localhost:8080](http://localhost:8080)
 
 ## Contributions 🤝
 
