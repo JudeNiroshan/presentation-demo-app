@@ -13,7 +13,6 @@ import org.springframework.web.multipart.MultipartFile;
 import java.io.IOException;
 import java.text.DecimalFormat;
 
-import static org.jude.demo.companycatalog.utils.FileUploadUtil.saveFileInGCPCloudStorage;
 
 @Controller
 public class RegistrationController {
@@ -21,9 +20,11 @@ public class RegistrationController {
     public static final String UPLOAD_DIR = "uploaded_files/";
 
     private final CompanyService companyService;
+    private final FileUploadUtil fileUploadUtil;
 
-    public RegistrationController(CompanyService companyService) {
+    public RegistrationController(CompanyService companyService, FileUploadUtil fileUploadUtil) {
         this.companyService = companyService;
+        this.fileUploadUtil = fileUploadUtil;
     }
 
     @GetMapping("/register")
@@ -40,7 +41,7 @@ public class RegistrationController {
         // upload image to GCP
         String fileName = StringUtils.cleanPath(file.getOriginalFilename());
         FileUploadUtil.saveFile(UPLOAD_DIR, fileName, file);
-        String imgUrl = saveFileInGCPCloudStorage(fileName, file);
+        String imgUrl = fileUploadUtil.saveFileInGCPCloudStorage(fileName, file);
 
         // save company details in database
         Company company = new Company();

@@ -6,8 +6,10 @@ import com.google.cloud.storage.BlobId;
 import com.google.cloud.storage.BlobInfo;
 import com.google.cloud.storage.Storage;
 import com.google.cloud.storage.StorageOptions;
+import org.springframework.stereotype.Component;
 import org.springframework.web.multipart.MultipartFile;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -16,6 +18,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
 
+@Component
 public class FileUploadUtil {
 
     private static String bucketName = System.getenv("GCP_BUCKET_NAME");
@@ -37,11 +40,11 @@ public class FileUploadUtil {
         }
     }
 
-    public static String saveFileInGCPCloudStorage(String fileName, MultipartFile file) throws IOException {
+    public String saveFileInGCPCloudStorage(String fileName, MultipartFile file) throws IOException {
 
-        Credentials credentials = GoogleCredentials.fromStream(
-                new FileInputStream(
-                        FileUploadUtil.class.getResource("/keys/storage-bucket-access-key.json").getFile()));
+        Path uploadDir = Paths.get("uploaded_files/storage-bucket-access-key.json");
+        File myFile = uploadDir.toFile();
+        Credentials credentials = GoogleCredentials.fromStream(new FileInputStream(myFile));
 
         Storage storage = StorageOptions.newBuilder()
                 .setCredentials(credentials).setProjectId(projectName).build().getService();
