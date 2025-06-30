@@ -1,3 +1,5 @@
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=JudeNiroshan_presentation-demo-app&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=JudeNiroshan_presentation-demo-app)
+
 # presentation-demo-app
 Spring-boot 2 🚀 + Thymeleaf ☘️ containerised 🐳 application for demo purposes
 
