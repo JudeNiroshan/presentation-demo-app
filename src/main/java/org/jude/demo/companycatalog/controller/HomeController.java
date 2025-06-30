@@ -34,4 +34,9 @@ public class HomeController {
         dummyDataGenerateService.loadDataFromExternalSystems();
         return "redirect:/";
     }
+
+    @GetMapping("/health")
+    public String status() {
+        return "ok";
+    }
 }
