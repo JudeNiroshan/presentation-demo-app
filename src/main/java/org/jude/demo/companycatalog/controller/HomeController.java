@@ -35,6 +35,7 @@ public class HomeController {
         return "redirect:/";
     }
 
+    // is this endpoint enough?
     @GetMapping("/health")
     public String status() {
         return "ok";
