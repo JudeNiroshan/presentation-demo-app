@@ -34,4 +34,10 @@ public class HomeController {
         dummyDataGenerateService.loadDataFromExternalSystems();
         return "redirect:/";
     }
+
+    // is this endpoint enough?
+    @GetMapping("/health")
+    public String status() {
+        return "ok";
+    }
 }
